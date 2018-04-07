@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+ {% block content %}
+    <div class="container"> 
+    <div class="jumbotron">
+      <h1>{{coursename}}</h1>
+    </div> 
+  	</div>
+  	{% for i in questions %}
+  	<div class="container"> 
+    <div class="jumbotron">
+      <p>{{i[0]}}</p>
+    </div> 
+  	</div>	
+  	{% endfor %}
+ {% endblock %}
